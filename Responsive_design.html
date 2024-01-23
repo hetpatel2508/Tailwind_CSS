@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="w-full h-full flex flex-col gap-4">
+        <div class="w-full h-14">
+            <div id="mobile" class="flex flex-row justify-between align-middle xl:justify-between">
+
+                <div class="flex flex-row w-[65%] h
+                -14">
+                    <div class="w-[300px] h-12 mt-1 ml-3 bg-center bg-no-repeat bg-contain bg-[url('https://th.bing.com/th/id/R.050780d3d269b1d95332d6d9ca59047d?rik=mQL24%2bQssOhM0A&riu=http%3a%2f%2fcjss.enewspapr.com%2fgujrat%2fimages%2fGujaratsam.png&ehk=NkLUopyJhjBTQlIsJeN9spAqM%2b1nexDQ49ngDOydvVM%3d&risl=&pid=ImgRaw&r=0')] xl:w-[300px]"></div>
+                    <div class="hidden xl:block xl:w-[60%] xl:h-[12] xl:mt-1 "><span
+                            class="mytemp ml-5 2xl:ml-7 3xl:ml-9 text-lg 2xl:text-2xl 3xl:text-3xl opacity-80 hover:cursor-pointer text-slate-600 hover:text-slate-900 hover:opacity-100 relative top-2">Home</span><span
+                            class="mytemp ml-5 2xl:ml-7 3xl:ml-9 text-lg 2xl:text-2xl 3xl:text-3xl opacity-80 hover:cursor-pointer text-slate-600 hover:text-slate-900 hover:opacity-100 relative top-2">Ipl</span><span
+                            class="mytemp ml-5 2xl:ml-7 3xl:ml-9 text-lg 2xl:text-2xl 3xl:text-3xl opacity-80 hover:cursor-pointer text-slate-600 hover:text-slate-900 hover:opacity-100 relative top-2">Technology</span><span
+                            class="mytemp ml-5 2xl:ml-7 3xl:ml-9 text-lg 2xl:text-2xl 3xl:text-3xl opacity-80 hover:cursor-pointer text-slate-600 hover:text-slate-900 hover:opacity-100 relative top-2">Politics</span><span
+                            class="mytemp ml-5 2xl:ml-7 3xl:ml-9 text-lg 2xl:text-2xl 3xl:text-3xl opacity-80 hover:cursor-pointer text-slate-600 hover:text-slate-900 hover:opacity-100 relative top-2">Finance</span>
+                    </div>
+                </div>
+
+                <div class="hidden w-80 h-14  xl:flex flex-row justify-between ">
+                    <div class="w-[80%]  "><input type="text" name="" id=""
+                            class="w-[100%] h-8 rounded-2xl mt-2.5 border border-slate-800 pl-4 pb-1 font-thin"
+                            placeholder="Search Here..."></div>
+                    <div class="w-10 h-10 cursor-pointer bg-slate-500 mt-1.5 mr-3"></div>
+                </div>
+
+                <div class="w-10 h-10 mt-2 mr-2 cursor-pointer bg-green-900 xl:hidden" id="option_btn">*</div>
+            </div>
+        </div>
+        <div class="hidden w-full h-[53vw] sm:h-[42vw] md:h-[32vw] lg:h-[28vw] xl:hidden flex-col justify-around items-center"
+            id="myOption">
+            <div>Home</div>
+            <div>Ipl</div>
+            <div>Technology</div>
+            <div>Politics</div>
+            <div>Finance</div>
+            </ul>
+            <div class="w-[50%] h-14  flex flex-row justify-between ">
+                <div class="w-[80%] "><input type="text" name="" id=""
+                        class="w-[100%] h-8 rounded-2xl mt-2.5 border border-slate-800 pl-4 pb-1 font-thin"
+                        placeholder="Search Here..."></div>
+                <div class="w-10 h-10 cursor-pointer bg-slate-500 mt-1.5 mr-3"></div>
+            </div>
+        </div>
+        <div
+            class="w-[90vw] sm:w-[95%] h-[45vw] sm:h-[45vw] ml-[4vw] sm:ml-[2.5vw] xl:ml-[5vw] xl:flex xl:justify-center xl:align-middle xl:w-[90%] bg-green-800">
+            <img class="w-full h-full object-cover object-center "
+                src='https://th.bing.com/th/id/R.2879949cb31ed4be873eeb92f70cfc54?rik=3oegUIOvik4qUw&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f137302-nature-Canada-landscape-lake-forest-mountain.jpg&ehk=4LYrD3x1iyL%2fxhz6qkEbMUjMhwJiOX5CiC5S8eOK2y4%3d&risl=&pid=ImgRaw&r=0' alt="lol...!">
+        </div>
+        <div>
+            <center class="sm:text-sm lg:text-lg xl:text-xl 2xl:text-2xl">━━━━ NEWS ━━━━━</center>
+        </div>
+        <div class="w-full h-full flex flex-row flex-wrap gap-10 sm:gap-0 sm:ml-[1vw] md:ml-[0.7vw] xl:ml-[0.5vw]" id="container">
+<!-- 
+            <div
+                class="temp w-[70%] sm:w-[30vw] md:w-[23vw] xl:w-[18.6vw] h-[90vw] sm:h-[40vw] md:h-[30vw] xl:h-[25vw] mt-5 ml-[15%] sm:ml-3 md:ml-2.5 xl:ml-4 gap-1  bg-teal-300 flex flex-col  ">
+                <div class="w-[100%] h-[40%] bg-slate-500"></div>
+                <div class="w-[100%] h-[60%] bg-slate-500"></div>
+            </div> -->
+
+        </div>
+    </div>
+    <script>
+        let temp = 0;
+        let btn = document.getElementById("option_btn");
+
+        btn.addEventListener("click", () => {
+            if (temp % 2 == 0) {
+                document.getElementById("myOption").style.display = "flex";
+                temp++;
+            } else {
+                document.getElementById("myOption").style.display = "none";
+                temp++;
+            }
+        })
+
+        let t = 0;
+        let container=document.getElementById("container");
+        let lorem_temp = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, nihil dolorum ipsam suscipit fugiat quidem alias tenetur impedit temporibus consectetur minima? Harum vitae tenetur accusamus corporis expedita ipsa necessitatibus asperiores!";
+        for (let i = 0; i < 52; i++) {
+            let Img_link = `https://source.unsplash.com/rendom/200*200?sig=${t++}`;
+            // Create the main container div
+            let mainContainer = document.createElement("div");
+            mainContainer.classList.add("temp", "w-[70%]", "sm:w-[30vw]", "md:w-[23vw]", "xl:w-[18.6vw]", "h-[90vw]", "sm:h-[40vw]", "md:h-[30vw]", "xl:h-[25vw]", "mt-5", "ml-[15%]", "sm:ml-3", "md:ml-2.5", "xl:ml-4", "gap-1", "flex", "flex-col", "border","rounded-xl" , "border-solid", "border-black");
+
+            // Create the first child div
+            let childDiv1 = document.createElement("div");
+            childDiv1.classList.add("w-[100%]", "h-[40%]");
+            childDiv1.innerHTML=`<img src="https://source.unsplash.com/random/200*200?sig=${t++}" class="w-full h-full object-cover border-t rounded-lg"></img>`
+
+            // Create the second child div
+            let childDiv2 = document.createElement("div");
+            childDiv2.classList.add("w-[100%]", "h-[60%]" , "ml-2");
+            childDiv2.innerHTML=`<p>${lorem_temp}</p>`;
+
+            // Append the child divs to the main container
+            mainContainer.appendChild(childDiv1);
+            mainContainer.appendChild(childDiv2);
+
+            // Append the main container to the body or any other parent element
+            container.appendChild(mainContainer);
+        }
+    </script>
+</body>
+
+</html>
